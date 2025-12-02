@@ -482,6 +482,7 @@ type Comment struct {
 	Updated      string            `json:"updated,omitempty" structs:"updated,omitempty"`
 	Created      string            `json:"created,omitempty" structs:"created,omitempty"`
 	Visibility   CommentVisibility `json:"visibility,omitempty" structs:"visibility,omitempty"`
+	ParentId     int64             `json:"parentId,omitempty" structs:"parentId,omitempty"`
 }
 
 // FixVersion represents a software release in which an issue is fixed.
